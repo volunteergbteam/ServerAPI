@@ -21,7 +21,7 @@ class Event(models.Model):
 
     title = models.CharField(verbose_name='Titles', max_length=128)
     creation_date = models.DateTimeField(auto_now=False, auto_now_add=True)
-    type_id = models.ForeignKey(EventType, verbose_name='Event Types')
+    type_id = models.ForeignKey(EventType, verbose_name='Event Types', on_delete=models.CASCADE)
     description = models.CharField(verbose_name='Descriptions', max_length=256)
     event_date = models.DateTimeField(verbose_name="Events Dates", auto_now=False, auto_now_add=False)
     is_over = models.BooleanField()
