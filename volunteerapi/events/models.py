@@ -6,10 +6,16 @@ from users.models import User
 
 class Cities(models.Model):
 
+    def __str__(self):
+        return self.name
+
     name = models.CharField(verbose_name="names", max_length=64, blank=False)
 
 
 class EventType(models.Model):
+
+    def __str__(self):
+        return self.type
 
     type = models.CharField(verbose_name='Event Types', max_length=64)
     description = models.CharField(verbose_name='Descriptions', max_length=128)
