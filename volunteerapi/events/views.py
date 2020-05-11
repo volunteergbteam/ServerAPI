@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework import generics
 from .serializers import *
 from .models import Event
+from .permissions import IsOwnerOrReadOnly
 
 
 class EventCreateView(generics.CreateAPIView):
@@ -26,6 +27,7 @@ class EventDetailView(generics.RetrieveUpdateDestroyAPIView):
     """
     serializer_class = EventDetailSerializer
     queryset = Event.objects.all()
+    #permission_classes = IsOwnerOrReadOnly()
 
 
 class CityCreateView(generics.CreateAPIView):
