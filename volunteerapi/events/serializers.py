@@ -3,6 +3,7 @@ from .models import Event, Cities
 
 
 class EventDetailSerializer(serializers.ModelSerializer):
+
     owner_id = serializers.HiddenField(default=serializers.CurrentUserDefault())
 
     class Meta:
