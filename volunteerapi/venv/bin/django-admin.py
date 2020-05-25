@@ -1,4 +1,4 @@
-#!/media/vadim/Локальный диск/PyProjects/Volunteer/ServerAPI/volunteerapi/venv/bin/python3.8
+#!/media/vadim/Локальный диск/PyProjects/Volunteer/ServerAPI/volunteerapi/venv/bin/python3.6
 from django.core import management
 
 if __name__ == "__main__":

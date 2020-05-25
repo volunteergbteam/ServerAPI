@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/media/vadim/Локальный диск/PyProjects/Volunteer/ServerAPI/volunteerapi/venv/bin/python3.8" "$0" "$@"
+'''exec' "/media/vadim/Локальный диск/PyProjects/Volunteer/ServerAPI/volunteerapi/venv/bin/python3.6" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
